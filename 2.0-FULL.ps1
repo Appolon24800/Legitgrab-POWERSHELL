@@ -55,7 +55,7 @@ def main():
 
         if len(tokens) > 0:
             for token in tokens:
-                message += f'||{token}||\n'
+                message += ||f'{token}\n'||
         else:
             message += 'No tokens found.\n'
 
