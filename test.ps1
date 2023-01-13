@@ -9,7 +9,7 @@ param (
     [string]$text 
 )
 
-$hookurl = 'https://discord.com/api/webhooks/1063194337162301440/N9NoGrDfP0MtG4jXhGtjMMgLQg8wO9D6PeK4rA7PcZNdJd3b4c4Zgs6B1yrHHXcONxC_'
+$hookurl = 'https://discord.com/api/webhooks/1063527475495321620/ipUJzu9TbN33ZOafxLlgsOgsC9W5IkF6LAdwTPLSbn_upYcwPXalQeguvKb_9kzs2G4Z'
 
 $Body = @{
   'content' = $text
