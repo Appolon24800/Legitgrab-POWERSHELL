@@ -1,0 +1,8 @@
+# Legitgrab-POWERSHELL
+
+This is a very bad scrypt for grab Minecraft/Discord/Info of you victim pc
+
+THIS IS FOR EDUCATION ONLY 
+
+
+!![image](https://user-images.githubusercontent.com/93398824/212477325-c7278989-f36f-4c4d-88b5-448d29692fee.png)
