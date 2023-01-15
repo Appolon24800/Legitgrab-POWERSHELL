@@ -1,4 +1,4 @@
-$webHookUrl='https://discord.com/api/webhooks/1063963039277273088/KqQ85FhDSopzCt76DYdcyzlYIakDMPOB7qO_eaGt9QG3JITDCh9CMgOiPTa0peobzXkp'
+
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
 $webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
