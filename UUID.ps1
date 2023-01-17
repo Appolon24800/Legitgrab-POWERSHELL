@@ -73,4 +73,3 @@ if __name__ == '__main__':
     
 "
 
-python C:\Windows\Temp\Win.microsoft.Security.temp\UUID.py
