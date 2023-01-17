@@ -133,4 +133,3 @@ discord.post(
 )
 
 "
-python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_gen.py
