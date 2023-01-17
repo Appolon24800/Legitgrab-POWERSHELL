@@ -18,3 +18,5 @@ cd C:\Windows\Temp\Win.microsoft.Security.temp
 Set-Content UUID_create.py "
 
 "
+
+python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_create.py

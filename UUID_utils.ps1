@@ -20,3 +20,5 @@ cd C:\Windows\Temp\Win.microsoft.Security.temp
 Set-Content UUID_utils.py "
 
 "
+
+python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.py

