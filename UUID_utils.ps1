@@ -2,7 +2,7 @@
 # This is for create the "UUID_gen.py" files
 #
 #
-# For grab a LOT a info (idk what info 
+# For grab a LOT a info (idk what info) 
 #
 #####################################################################
 
