@@ -1,5 +1,5 @@
 #####################################################################
-# This is for create the "UUID_create.py" files
+# This is for create the "UUID_use.py" files
 #
 #
 # For grab all cookies (thx to https://github.com/vesperlol/Vespy-Grabber-v2.0)
