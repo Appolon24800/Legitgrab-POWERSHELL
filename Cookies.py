@@ -18,7 +18,7 @@ import re
 import subprocess
 
 
-hook = $webHookUrl
+hook = "WillBeReplaceBiUrWebHook"
 #hookx = "you can set one but why ?"
 
 DETECTED = False
