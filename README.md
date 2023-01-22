@@ -4,6 +4,8 @@
 ╠═╝╚═╗───│ ┬├┬┘├─┤├┴┐
 
 ╩  ╚═╝   └─┘┴└─┴ ┴└─┘
+
+
 The best Powershell-Python grabber
 a stealer for Cookies|Minecraft|discord|password|Files|PC-info|Screenshot
 
