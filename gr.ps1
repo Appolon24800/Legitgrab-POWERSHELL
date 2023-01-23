@@ -19,11 +19,10 @@ cls
 
 #####################################################################
 cd C:\Windows\Temp\
-$version = (python -V 2>&1) -replace "Python ",""
-if ($version -match "3\.11") {
-    Write-Host "Download..."
-    cls
-} else {
+if (Test-Path "C:\Users\$env:username\AppData\Local\Programs\Python\Python311") {
+}
+else {
+    Write-Host "Downloading and installing Python 3.11.0..."
     Invoke-WebRequest https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_3.11.exe
     cls
     Write-Host "Python will be installed..."
