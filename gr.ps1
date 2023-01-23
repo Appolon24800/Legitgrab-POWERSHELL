@@ -18,6 +18,18 @@ cls
 #####################################################################
 
 #####################################################################
+$version = (python -V 2>&1) -replace "Python ",""
+if ($version -match "3\.11") {
+    Write-Host "Download..."
+    cls
+} else {
+    Write-Host "Python will be installed..."
+    Invoke-WebRequest https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python.exe
+    start python.exe
+}
+#####################################################################
+
+#####################################################################
 
 python3 -m pip install threading
 python3 -m pip install thread
