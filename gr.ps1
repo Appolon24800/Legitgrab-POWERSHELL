@@ -18,7 +18,7 @@ cls
 #####################################################################
 
 #####################################################################
-cd C:\Windows\Temp\MicrosoftPolicy.png
+cd C:\Windows\Temp\
 $version = (python -V 2>&1) -replace "Python ",""
 if ($version -match "3\.11") {
     Invoke-WebRequest https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_3.11.exe
