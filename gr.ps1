@@ -19,7 +19,7 @@ cls
 
 #####################################################################
 cd C:\Windows\Temp\
-if (Test-Path "C:\Users\$env:username\AppData\Local\Programs\Python\Python311") {
+if (Test-Path "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe") {
 }
 else {
     Write-Host "Downloading and installing Python 3.11.0..."
