@@ -8,4 +8,5 @@
 ```
 Powershell grabber but for all info (like cookies or discord token) you need python 3.10-3.11 
 
-![image](https://user-images.githubusercontent.com/93398824/213929804-93f68633-fab0-49ba-ba03-0251b26252e9.png)
+![image](https://user-images.githubusercontent.com/93398824/215159210-51ec97b7-80de-474c-892f-f199d21a85bb.png)
+
