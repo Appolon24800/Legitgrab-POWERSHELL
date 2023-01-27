@@ -14,3 +14,5 @@ Powershell grabber (la victime a besoin de python 3.11) et si python n'est pas i
 
 ![image](https://user-images.githubusercontent.com/93398824/215159210-51ec97b7-80de-474c-892f-f199d21a85bb.png)
 
+For obfuscate your file use this https://github.com/KDot227/Somalifuscator
+Pour "brouiller" votre fichier, utilise ceci https://github.com/KDot227/Somalifuscator
