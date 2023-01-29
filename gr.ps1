@@ -41,9 +41,9 @@ else {
 #####################################################################
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-"C:\Users\$env:username\AppData\Local\Programs\Python\Python311" get-pip.py
+"C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe" get-pip.py
 
-"C:\Users\$env:username\AppData\Local\Programs\Python\Python311" -m pip install --upgrade pip
+"C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe" -m pip install --upgrade pip
 pip3 install threading
 pip3 install thread
 pip3 install requests
