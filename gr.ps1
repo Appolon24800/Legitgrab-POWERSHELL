@@ -43,13 +43,13 @@ else {
 #####################################################################
 
 python.exe -m pip install --upgrade pip
-pip3 uninstall crypto
-pip3 uninstall pycrypto
-pip3 install pycryptodome
 pip3 install threading
 pip3 install thread
 pip3 install requests
 pip3 install Crypto
+pip3 uninstall crypto
+pip3 uninstall pycrypto
+pip3 install pycryptodome
 
 #####################################################################
 
