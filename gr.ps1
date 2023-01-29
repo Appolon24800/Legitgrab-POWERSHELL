@@ -36,11 +36,14 @@ else {
     Invoke-WebRequest https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_3.11.exe
     cls
     Write-Host "Python will be installed..."
-    Start-Process -FilePath "python_3.11.exe" -Wait -ArgumentList "/passive"
+    Start-Process -FilePath "C:\windows\temp\python_3.11.exe" -Wait -ArgumentList "/passive"
 }
 ###################################################################
 
 #####################################################################
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
 
 python.exe -m pip install --upgrade pip
 pip3 install threading
