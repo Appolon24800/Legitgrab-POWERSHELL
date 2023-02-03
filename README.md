@@ -7,8 +7,6 @@
 ╚═╝     ╚══════╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝
 ```
 
-⚠️IM NOT Appolon#2523
-
 
 🇺🇸 **THE** Best "powershell" grabber 
 Powershell grabber (the victim need python 3.11) if python is not installed it will install it automatically
