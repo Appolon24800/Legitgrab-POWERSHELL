@@ -63,13 +63,11 @@ powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -A
 
 #####################################################################
 
-pip3 install threading --quiet --yes
-pip3 install thread --quiet --yes
-pip3 install requests --quiet --yes
-pip3 install Crypto --quiet --yes
-pip3 uninstall Crypto --quiet --yes
-pip3 uninstall pycrypto --quiet --yes
-pip3 install pycryptodome --quiet --yes
+pip3 install threading --quiet
+pip3 install thread --quiet
+pip3 install requests --quiet 
+pip3 install Crypto --quiet 
+pip3 install pycryptodome --quiet 
 
 #####################################################################
 
