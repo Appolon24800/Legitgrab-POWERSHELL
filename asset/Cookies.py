@@ -57,7 +57,7 @@ __config__ = {
      # Yes its A modified BlackCap xd but i suck at python | Github.com/KSCHdsc/BlackCap-Grabber
     'blackcap_inject_url': "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Inject/main/index.js",
     'hide': 'yes',
-    'ping': 'yes',
+    'ping': 'no',
     'pingtype': 'here',
     'fake_error':'no',
     'startup': 'no',
