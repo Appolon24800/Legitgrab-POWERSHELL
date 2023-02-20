@@ -41,32 +41,25 @@ powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -A
 ###################################################################
 
 #####################################################################
-
-pip install httpx
-pip install pyperclip
-pip install pyotp
-pip install asyncio
-pip install winregistry
-pip install psutil
-pip install pypiwin32==223
-pip install pycryptodome
-pip install pyinstaller>=5.0
-pip install PIL-tools
-pip install asyncio
-pip install threaded
-pip install requests
-pip install datetime
-pip install colorama
-pip install pillow
-pip install customtkinter
-pip install pycryptodome
-pip install pyperclip
-pip install pyfiglet
-pip install tqdm
-
-
+python.exe -m pip install --upgrade pip
+if (-not (Get-Module -Name httpx)) { pip install httpx }
+if (-not (Get-Module -Name pyperclip)) { pip install pyperclip }
+if (-not (Get-Module -Name pyotp)) { pip install pyotp }
+if (-not (Get-Module -Name asyncio)) { pip install asyncio }
+if (-not (Get-Module -Name winregistry)) { pip install winregistry }
+if (-not (Get-Module -Name psutil)) { pip install psutil }
+if (-not (Get-Module -Name pypiwin32)) { pip install pypiwin32==223 }
+if (-not (Get-Module -Name pycryptodome)) { pip install pycryptodome }
+if (-not (Get-Module -Name pyinstaller)) { pip install pyinstaller>=5.0 }
+if (-not (Get-Module -Name PIL)) { pip install Pillow; pip install PIL-tools }
+if (-not (Get-Module -Name threaded)) { pip install threaded }
+if (-not (Get-Module -Name requests)) { pip install requests }
+if (-not (Get-Module -Name colorama)) { pip install colorama }
+if (-not (Get-Module -Name pillow)) { pip install pillow }
+if (-not (Get-Module -Name customtkinter)) { pip install customtkinter }
+if (-not (Get-Module -Name pyfiglet)) { pip install pyfiglet }
+if (-not (Get-Module -Name tqdm)) { pip install tqdm }
 #https://github.com/KSCHdsc/BlackCap-Grabber
-
 #####################################################################
 
 #####################################################################
