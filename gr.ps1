@@ -86,7 +86,7 @@ pip install pyfiglet
 pip install tqdm
 
 
-//https://github.com/KSCHdsc/BlackCap-Grabber
+#https://github.com/KSCHdsc/BlackCap-Grabber
 
 #####################################################################
 
